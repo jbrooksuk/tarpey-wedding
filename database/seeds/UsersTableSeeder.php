@@ -19,5 +19,11 @@ class UsersTableSeeder extends Seeder
             'email' => 'jbrooksuk@me.com',
             'password' => 'baloo131'
         ]);
+
+        User::create([
+            'name' => 'Olly & Monica',
+            'email' => 'ollyandmonica@gmail.com',
+            'password' => 'bruno'
+        ]);
     }
 }
