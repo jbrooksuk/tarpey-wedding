@@ -141,6 +141,10 @@ class Family extends Resource
                 return implode(', ', $strings);
             })->onlyOnIndex()->asHtml(),
 
+            Text::make('Invite Code', function () {
+                return $this->invite->code ?? null;
+            })->onlyOnIndex(),
+
             new Panel('Contact Information', [
                 Text::make('Email Address', 'email')->hideFromIndex(),
             ]),
