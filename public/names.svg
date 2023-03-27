@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="390px" height="160px" viewBox="0 0 390 160" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Artboard</title>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#CFAB70" offset="0%"></stop>
+            <stop stop-color="#E5C591" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-2">
+            <stop stop-color="#CFAB70" offset="0%"></stop>
+            <stop stop-color="#E5C591" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Artboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" font-weight="normal">
+        <g id="Group" transform="translate(76.500000, 29.000000)">
+            <text id="Monica-Cavendish" fill="url(#linearGradient-1)" fill-rule="nonzero" font-family="Lovely" font-size="45" line-spacing="33">
+                <tspan x="0" y="34">Mo</tspan>
+                <tspan x="53.595" y="34" font-family="LovelyAlternative, Lovely Alternative">n</tspan>
+                <tspan x="68.265" y="34">ica Cavendis</tspan>
+                <tspan x="221.445" y="34" font-family="LovelySwirls2, Lovely Swirls 2">h</tspan>
+            </text>
+            <text id="Oliver-Tarpey" fill="url(#linearGradient-2)" fill-rule="nonzero" font-family="Lovely" font-size="45" line-spacing="33">
+                <tspan x="34.5" y="103">Oliver </tspan>
+                <tspan x="120.675" y="103" font-family="LovelyAlternative, Lovely Alternative">T</tspan>
+                <tspan x="129.36" y="103">arpe</tspan>
+                <tspan x="183.675" y="103" font-family="LovelySwirls3, Lovely Swirls 3">y</tspan>
+            </text>
+            <text id="&amp;" font-family="LovelyAlternative, Lovely Alternative" font-size="35" fill="#707070" fill-opacity="0.9">
+                <tspan x="108.63" y="61">&amp;</tspan>
+            </text>
+        </g>
+    </g>
+</svg>
