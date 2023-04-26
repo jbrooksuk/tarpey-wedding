@@ -2,19 +2,19 @@
 
 @section('content')
 <div id="app">
-    <article class="container w-full lg:w-2/3 mx-auto px-4 md:mt-8 font-serif text-gray-800 leading-normal antialiased rounded-lg flex flex-col items-center">
-        <div class="w-4/6">
-            <img src="{{ asset('names.svg') }}" class="w-full" alt="Monica Cavendish & Oliver Tarpey" />
+    <article class="w-full mx-auto px-4 md:mt-8 font-serif text-gray-800 leading-normal antialiased rounded-lg flex flex-col items-center">
+        <div class="w-full lg:w-1/3">
+            <img src="{{ asset('names.svg') }}" class="block w-full" alt="Monica Cavendish & Oliver Tarpey" />
         </div>
 
-        <tabs class="w-2/3">
+        <tabs class="w-5/6">
             @include('partials.announcements')
             <tab name="Details">
-                @if(!$family->is_evening)
+                @if(!$family->evening)
                 <p class="text-2xl mb-4 tracking-tight">You are invited to the wedding of Monica Cavendish and Oliver Tarpey.</p>
 
                 <p>We would love nothing more than for you to attend and celebrate with us, so bring along your dancing shoes!</p>
-                <p>We are getting married as 12pm, so please make sure you arrive and are seated by then.</p>
+                <p>We are getting married at 12pm at <a href="https://www.manorhousealsager.com/" class="text-teal-600 font-semibold text-underline">The Manor House, Alsager, Cheshire, ST7 2QQ</a>, so please make sure you arrive and are seated by then.</p>
                 <p>We look forward to hearing from and hope you can make it! <strong class="text-teal-600 font-semibold">Please RSVP by 1st June at the latest.</strong></p>
 
                 <p>If you have any specific dietary requirements please contact us via the email address <a href="mailto:ollyandmonica@gmail.com?subject=Tarpey%20Wedding" class="underline text-teal-600 font-semibold">ollyandmonica@gmail.com</a> or via text message to
@@ -22,7 +22,7 @@
                 @else
                 <p class="text-2xl mb-4 tracking-tight">You are invited to the evening reception to celebrate the marriage of Monica Cavendish and Oliver Tarpey.</p>
 
-                <p>The party starts at 7pm and we would love nothing more than for you to attend and celebrate with us, so bring along your dancing shoes!</p>
+                <p>The party starts at 7pm at <a href="https://www.manorhousealsager.com/" class="text-teal-600 font-semibold text-underline">The Manor House, Alsager, Cheshire, ST7 2QQ</a>. We would love nothing more than for you to attend and celebrate with us, so bring along your dancing shoes!</p>
                 <p>We look forward to hearing from and hope you can make it! <strong class="text-teal-600 font-semibold">Please RSVP by 1st June at the latest.</strong></p>
                 @endif
             </tab>

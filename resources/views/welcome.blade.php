@@ -2,7 +2,7 @@
 
 @section('content')
 <div class="flex items-center flex-col justify-center content-center h-screen">
-    <div class="w-1/3">
+    <div class="w-2/3 lg:w-1/3">
         <img src="{{ asset('names.svg') }}" class="w-full" alt="Monica Canvendish & Oliver Tarpey" />
     </div>
     <div class="content-center w-half">
