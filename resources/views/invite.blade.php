@@ -7,7 +7,7 @@
             <img src="{{ asset('names.svg') }}" class="block w-full" alt="Monica Cavendish & Oliver Tarpey" />
         </div>
 
-        <tabs class="w-5/6">
+        <tabs class="w-5/6 lg:w-1/2">
             @include('partials.announcements')
             <tab name="Details">
                 @if(!$family->evening)
