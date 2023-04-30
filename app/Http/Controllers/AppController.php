@@ -9,7 +9,6 @@ use App\FamilyMember;
 use Illuminate\Support\Arr;
 use Illuminate\Http\Request;
 use Illuminate\Validation\Rule;
-use Nexmo\Laravel\Facade\Nexmo;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Support\Facades\URL;
 
@@ -107,19 +106,19 @@ class AppController extends Controller
             $family->members()->where('id', '=', Arr::get($member, 'id'))->first()->update($member);
         });
 
-        if (!config('app.debug')) {
-            // Send a notification to us to say that we've had an RSVP update.
-            Nexmo::message()->send([
-                'to' => '+447527547073',
-                'from' => config('services.nexmo.sms_from'),
-                'text' => "The {$family->name} family have sent an RSVP!",
-            ]);
-            Nexmo::message()->send([
-                'to' => '+447940177394',
-                'from' => config('services.nexmo.sms_from'),
-                'text' => "The {$family->name} family have sent an RSVP!",
-            ]);
-        }
+        // if (!config('app.debug')) {
+        //     // Send a notification to us to say that we've had an RSVP update.
+        //     Nexmo::message()->send([
+        //         'to' => '+447527547073',
+        //         'from' => config('services.nexmo.sms_from'),
+        //         'text' => "The {$family->name} family have sent an RSVP!",
+        //     ]);
+        //     Nexmo::message()->send([
+        //         'to' => '+447940177394',
+        //         'from' => config('services.nexmo.sms_from'),
+        //         'text' => "The {$family->name} family have sent an RSVP!",
+        //     ]);
+        // }
 
         return new JsonResponse([
             'success' => true,
